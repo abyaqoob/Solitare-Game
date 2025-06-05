@@ -1,4 +1,5 @@
-♠️ Solitaire Game in C++
+♠️ SOLITAIRE GAME IN C++
+
 
 📘 Project Overview
 
