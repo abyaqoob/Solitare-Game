@@ -1,48 +1,48 @@
-♠️ SOLITAIRE GAME IN C++
-
+♠️ Solitaire Game – Data Structures Project (C++)
 
 📘 Project Overview
 
-This is a console-based implementation of the Solitaire card game, developed in C++ as a Data Structures course project. The game is built from scratch without using the STL (Standard Template Library) and emphasizes the application of core data structures to model card movements and game logic.
+This project is a console-based version of Solitaire, developed in C++ for a Data Structures course. The game simulates core Solitaire mechanics while emphasizing the implementation and use of fundamental data structures without relying on the Standard Template Library (STL).
 
-🧠 Learning Objectives
+It served as a learning platform to apply Object-Oriented Programming (OOP) and understand the real-world application of data structures in game development.
 
-This project was designed to strengthen understanding of the following data structures and programming concepts:
+<br>
+🧠 What I Learned
 
-Doubly Linked Lists: Used for card storage in tableau columns and the main deck.
-Stacks: Used to manage the stock, waste, and foundation piles.
-Custom Iterators: Implemented to traverse custom list structures.
-Undo Stack: Enables players to reverse previous moves using a command stack.
-Object-Oriented Programming: Applied throughout the design using classes for Card, Game, Command, Stack, and List.
+This project deepened my understanding of:
 
+✅ Doubly Linked Lists – Used for managing columns (tableau) and the deck.
+✅ Stacks – Used for the stockpile, wastepile, and foundation piles.
+✅ Custom Iterators – Created to traverse custom data structures efficiently.
+✅ Undo Mechanism – Stack of Command objects enables undo functionality.
+✅ OOP Concepts – Encapsulation, class-based design, and modularization.
+<br>
 🎮 Game Features
 
-Full Solitaire game logic with:
-Drawing from stock to waste
-Moving cards between tableau columns
-Moving cards to/from foundation piles
-Moving cards from waste to tableau/foundation
-Undo functionality for supported actions
-Unicode suit display using wcout and console coloring
-Hidden and revealed card states
-Game-win detection when all foundation piles are complete
-🗂️ Main Classes and Structures
+🔁 Draw cards from stock to wastepile
+🔄 Move cards between tableau columns using valid Solitaire rules
+🂱 Build foundations from Ace to King by suit
+♻️ Undo moves using a custom stack-based command system
+🎨 Unicode suit symbols and color-coded display
+🕹️ Command-based gameplay through console
+<br>
+🛠️ Technologies Used
 
-Card: Stores card suit, rank, visibility, and color logic.
-List<T>: Custom doubly linked list implementation with iterators.
-Stack<T>: Stack implementation using the custom linked list.
-Game: Central class handling the deck, tableau, stock, waste, foundations, and game rules.
-Command: Stores move history for the undo feature.
-🛠️ How to Run
+Language: C++
+Console Encoding: wcout, ANSI escape codes for colored text
+No STL Used – All data structures manually implemented
+<br>
+🧱 Main Components
 
-Open the project in Visual Studio (with support for wide characters and ANSI color codes).
-Compile the code.
-Run the program.
-Use the console to input commands in the following formats:
-s — Draw from stockpile
-m c1 c2 n — Move n cards from column c1 to column c2
-m c1 f1 1 — Move a card from column c1 to foundation f1
-m w f1 1 — Move a card from waste to foundation f1
-m w c1 1 — Move a card from waste to column c1
-m f1 c1 1 — Move a card from foundation f1 to column c1
-z — Undo the last move
+Class	Purpose
+Card	Represents a single card with rank, suit, and visibility
+List<T>	Custom doubly linked list with iterator support
+Stack<T>	Built on top of List<T> for LIFO operations
+Command	Stores each move to support undoing
+Game	Core logic for deck initialization, shuffling, rendering, and game flow
+<br>
+▶️ How to Play
+
+Compile the code in Visual Studio or any C++ IDE with Unicode support.
+Run the program in the console.
+Use the following commands to interact:
