@@ -1,48 +1,41 @@
-♠️ Solitaire Game – Data Structures Project (C++)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sudoku Game</title>
+</head>
+<body style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #121212; color: #f0f0f0; padding: 20px;">
 
-📘 Project Overview
+  <h1 style="font-size: 36px; font-weight: bold; color: #ffffff;">Sudoku Game</h1>
 
-This project is a console-based version of Solitaire, developed in C++ for a Data Structures course. The game simulates core Solitaire mechanics while emphasizing the implementation and use of fundamental data structures without relying on the Standard Template Library (STL).
+  <h2 style="font-size: 28px; font-weight: bold; color: #f5f5f5;">🧠 Features</h2>
+  <ul style="font-size: 16px;">
+    <li>9x9 grid logic with validation</li>
+    <li>Difficulty selection (Easy, Medium, Hard)</li>
+    <li>Timer and move counter</li>
+    <li>Hint and Undo functionality</li>
+  </ul>
 
-It served as a learning platform to apply Object-Oriented Programming (OOP) and understand the real-world application of data structures in game development.
+  <h2 style="font-size: 28px; font-weight: bold; color: #f5f5f5;">🧱 Technologies Used</h2>
+  <ul style="font-size: 16px;">
+    <li>Language: C++</li>
+    <li>Interface: Console or GUI using SFML</li>
+    <li>Data Structures: 2D Arrays and Backtracking Algorithms</li>
+  </ul>
 
-<br>
-🧠 What I Learned
+  <h2 style="font-size: 28px; font-weight: bold; color: #f5f5f5;">▶️ How to Play</h2>
+  <p style="font-size: 16px; line-height: 1.6;">
+    Enter numbers (1–9) into the empty cells. Follow Sudoku rules: no repetition in any row, column, or 3x3 subgrid.
+  </p>
 
-This project deepened my understanding of:
+  <h2 style="font-size: 28px; font-weight: bold; color: #f5f5f5;">🔧 Controls</h2>
+  <ul style="font-size: 16px;">
+    <li>Arrow Keys – Navigate the grid</li>
+    <li>Number Keys – Enter values</li>
+    <li>Backspace – Clear a cell</li>
+    <li>H – Get a hint</li>
+    <li>U – Undo move</li>
+  </ul>
 
-✅ Doubly Linked Lists – Used for managing columns (tableau) and the deck.
-✅ Stacks – Used for the stockpile, wastepile, and foundation piles.
-✅ Custom Iterators – Created to traverse custom data structures efficiently.
-✅ Undo Mechanism – Stack of Command objects enables undo functionality.
-✅ OOP Concepts – Encapsulation, class-based design, and modularization.
-<br>
-🎮 Game Features
-
-🔁 Draw cards from stock to wastepile
-🔄 Move cards between tableau columns using valid Solitaire rules
-🂱 Build foundations from Ace to King by suit
-♻️ Undo moves using a custom stack-based command system
-🎨 Unicode suit symbols and color-coded display
-🕹️ Command-based gameplay through console
-<br>
-🛠️ Technologies Used
-
-Language: C++
-Console Encoding: wcout, ANSI escape codes for colored text
-No STL Used – All data structures manually implemented
-<br>
-🧱 Main Components
-
-Class	Purpose
-Card	Represents a single card with rank, suit, and visibility
-List<T>	Custom doubly linked list with iterator support
-Stack<T>	Built on top of List<T> for LIFO operations
-Command	Stores each move to support undoing
-Game	Core logic for deck initialization, shuffling, rendering, and game flow
-<br>
-▶️ How to Play
-
-Compile the code in Visual Studio or any C++ IDE with Unicode support.
-Run the program in the console.
-Use the following commands to interact:
+</body>
+</html>
