@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>♠️ Solitaire Game – C++ Data Structures Project</title>
+  
 </head>
 <body style="font-family: 'Segoe UI', sans-serif; background-color: #121212; color: #f0f0f0; padding: 40px; line-height: 1.6;">
 
